@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         StringRequest postResquest = new StringRequest(Request.Method.PUT, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(MainActivity.this, "Resuesta del Servidor = " + response, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Registro actualizado = " + response, Toast.LENGTH_LONG).show();
 
             }
         }, new Response.ErrorListener() {
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
 
-                Toast.makeText(MainActivity.this, "Respuesta del Servidor = " + response, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Registro eliminado", Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override
